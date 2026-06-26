@@ -1,0 +1,148 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; 
+}
+
+body {
+    background-color: #acacac;
+    position: relative;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; 
+    z-index: 2; 
+}
+
+.oranienbaum-regular {
+    font-family: "Oranienbaum", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.logo 
+{
+    margin-right: 20px; 
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+    border-radius: 45%;
+}
+
+.title {
+    margin-left: 20px; 
+}
+
+.title h1 {
+    font-size: 20px;
+    color: black;
+    margin: 0;
+    font-family: "Oranienbaum", serif;
+}
+
+
+.mesaj {
+    background-color: #ddcfcf;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Oranienbaum", serif;
+}
+
+.mesaj h2 {
+    font-size: 24px;
+    font-family: "Oranienbaum", serif;
+}
+
+.mesaj span {
+    font-weight: bold;
+    color: #7b8187;
+    font-family: "Oranienbaum", serif;
+}
+
+.paketbilgisi {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.paketbilgisi h3 {
+    text-align: center;
+    color: #333;
+    font-size: 20px;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #ddcfcf;
+    color: white;
+}
+
+td {
+    font-size: 16px;
+}
+
+
+.panel-actions {
+    display: flex;
+    justify-content: center;  /* Butonları yatayda ortalayack */
+    gap: 20px; 
+    margin-top: 30px;
+}
+
+.action-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background: transparent;
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    font-family: "Oranienbaum", serif;
+    border: 1px solid #ddcfcf;
+}
+
+.action-button:hover {
+    background: #ddcfcf;
+    color: #000;
+    border-color: #000;
+    transform: translateY(-3px);
+}
+p{
+    font-family: "Oranienbaum", serif;
+    font-size: 20px;
+}
+
+
+

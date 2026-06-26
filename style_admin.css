@@ -1,0 +1,226 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; 
+}
+
+body {
+    background-color: #e0dbdb;
+    position: relative;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; 
+    z-index: 2; 
+}
+
+.oranienbaum-regular {
+    font-family: "Oranienbaum", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.metin {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0); 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    font-weight: bold; 
+    font-family: "Oranienbaum", serif; 
+}
+
+.logo {
+    margin-right: 20px; 
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+    border-radius: 45%;
+}
+
+.title {
+    margin-left: 20px; 
+}
+
+.title h1 {
+    font-size: 20px;
+    color: black;
+    margin: 0;
+    font-family: "Oranienbaum", serif;
+}
+
+.login-icons i {
+    font-size: 18px; 
+    margin-left: 20px; 
+    color: #451032;
+}
+
+.login-icons i:hover{
+    cursor: pointer;
+}
+
+.menu {
+    flex: 1; 
+    text-align: right; 
+}
+
+.menueleman {
+    font-size: 19px;
+    font-family: "Oranienbaum", serif;
+    color: #451032;
+    text-decoration: none;
+    padding: 10px 6px;
+    position: relative; 
+    transition: color 0.3s ease;
+}
+
+.menueleman .altefekt {
+    position: absolute;
+    bottom: 0px; 
+    left: 0;
+    width: 0%; 
+    height: 1.5px;
+    background-color: #451032;
+    transition: width 0.3s ease; 
+}
+
+.menueleman:hover .altefekt {
+    width: 95%; 
+}
+
+.paragraf{
+    text-align: center;
+    font-family: "Oranienbaum", serif;
+    font-weight: bold;
+    background-color: #782b5c;
+
+}
+
+.mesaj{
+    text-align: center;
+    font-family: "Oranienbaum", serif;
+    font-size: 35px;
+}
+
+
+
+.admin-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.admin-card {
+    background: white;
+    border-radius: 20px;
+    padding: 35px 25px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+    transition: all 0.4s ease;
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    overflow: hidden;
+}
+
+.admin-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 6px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease;
+}
+
+.admin-card:hover::before {
+    transform: scaleX(1);
+}
+
+.admin-card:hover {
+    transform: translateY(-18px);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.22);
+}
+
+.admin-card i {
+    font-size: 55px;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, var(--color), transparent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.admin-card h3 {
+    font-family: "Oranienbaum", serif;
+    font-size: 24px;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.admin-card p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.card-beslenme   {
+     --color: #4ECDC4; 
+}
+.card-egitmen    {
+    --color: #45B7D1;
+}
+.card-paket      {
+  --color: #96CEB4;
+ }
+
+.card-yorum      {
+     --color: #F7B731; 
+}
+.card-ders       { 
+    --color: #FF6B6B;
+ }
+.card-istatistik { 
+    --color: #9B59B6; 
+}
+
+.logout-btn {
+    display: inline-block;
+    margin-top: 70px;
+    padding: 14px 40px;
+    background: #e74c3c;
+    color: white;
+    font-family: "Oranienbaum", serif;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0 8px 25px rgba(231, 76, 60, 0.4);
+    transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+    background: #c0392b;
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(231, 76, 60, 0.6);
+}
+

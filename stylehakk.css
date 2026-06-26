@@ -1,0 +1,413 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c3c3c3;
+    position: relative;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; 
+    z-index: 2; 
+}
+
+.oranienbaum-regular {
+    font-family: "Oranienbaum", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.metin {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0); 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    font-weight: bold; 
+    font-family: "Oranienbaum", serif; 
+}
+
+.logo {
+    margin-right: 20px; 
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+    border-radius: 45%;
+}
+
+.title {
+    margin-left: 20px; 
+}
+
+.title h1 {
+    font-size: 20px;
+    color: black;
+    margin: 0;
+    font-family: "Oranienbaum", serif;
+}
+
+.login-icons i {
+    font-size: 18px; 
+    margin-left: 20px; 
+    color: #451032;
+}
+
+.login-icons i:hover{
+    cursor: pointer;
+}
+
+.menu {
+    flex: 1; 
+    text-align: right; 
+}
+
+.menueleman {
+    font-size: 19px;
+    font-family: "Oranienbaum", serif;
+    color: #451032;
+    text-decoration: none;
+    padding: 10px 6px;
+    position: relative; 
+    transition: color 0.3s ease;
+}
+
+.menueleman .altefekt {
+    position: absolute;
+    bottom: 0px; 
+    left: 0;
+    width: 0%; 
+    height: 1.5px;
+    background-color: #451032;
+    transition: width 0.3s ease; 
+}
+
+.menueleman:hover .altefekt {
+    width: 95%; 
+}
+
+h2{
+    font-family: "Oranienbaum", serif;
+    color: #451032;
+    text-align: center;
+}
+
+.hakkimizda-galeri {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hakkimizda-kutu {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+    margin: 20px;
+}
+
+.hakkimizda-kutu img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.hakkimizda-kutu:hover img {
+    transform: scale(1.05);
+}
+
+.hakkimizda-ozetler {
+    max-width: 1200px;
+    margin: 0 auto 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+.hakk-kutu {
+    position: relative;
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 22px 26px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transform: translateY(0) scale(1);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    border-left: 4px solid #451032;
+}
+
+.hakk-kutu h4 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 19px;
+    color: #451032;
+    font-family: "Oranienbaum", serif;
+}
+
+
+.hakk-kutu p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #000000;
+    font-family: "Oranienbaum", serif;
+}
+
+
+.hakk-kutu:hover {
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.18);
+    border-left-color: #8a205f;
+}
+
+.hakkimizda-icerik h3,
+.hakkimizda-icerik p {
+    text-align: center;
+    color: #000000;
+    font-family: "Oranienbaum", serif;
+    margin: 10px;
+    margin-bottom: 10px;
+}
+
+.egitmen-kart {
+    text-align: center;
+    margin: 60px auto 40px auto;
+    position: relative;
+    max-width: 400px;
+    transition: all 0.4s ease;
+}
+
+.egitmen-resim {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #451032;
+    box-shadow: 0 0 12px rgba(0,0,0,0.2);
+    transition: all 0.4s ease-in-out;
+}
+
+.egitmen-kart:hover .egitmen-resim {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(69, 16, 50, 0.5);
+}
+
+.egitmen-ad {
+    color: #451032;
+    font-size: 26px;
+    margin-top: 15px;
+    transform: translateY(10px);
+    transition: all 0.4s ease-in-out;
+}
+
+.egitmen-aciklama {
+    font-size: 15px;
+    color: #000000;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.4s ease-in-out;
+    font-family: "Oranienbaum", serif;
+}
+
+.egitmen-kart:hover .egitmen-ad,
+.egitmen-kart:hover .egitmen-aciklama {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.yorum-form {
+    background: linear-gradient(145deg, #ffffff, #fdf5fa);
+    border-radius: 16px;
+    border: 1px solid rgba(69,16,50,0.18);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+    padding: 28px 26px;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+}
+
+.yorum-form h3 {
+    color: #451032;
+    text-align: center;
+    margin-bottom: 18px;
+    font-family: "Oranienbaum", serif;
+    letter-spacing: 0.5px;
+    font-size: 22px;
+}
+
+.yorum-form select,
+.yorum-form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 2px solid rgba(69,16,50,0.35);
+    margin-top: 10px;
+    font-family: "Oranienbaum", serif;
+    font-size: 14px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+    transition: all 0.25s ease;
+    outline: none;
+}
+
+.yorum-form textarea{
+    width: 580px;
+}
+
+.yorum-form select:hover,
+.yorum-form textarea:hover {
+    border-color: #451032;
+}
+
+.yorum-form select:focus,
+.yorum-form textarea:focus {
+    border-color: #451032;
+    box-shadow: 0 0 0 3px rgba(69,16,50,0.15);
+}
+
+.yorum-form select {
+    appearance: none;
+    background-image:
+        linear-gradient(45deg, transparent 50%, #451032 50%),
+        linear-gradient(135deg, #451032 50%, transparent 50%);
+    background-position:
+        calc(100% - 18px) calc(50% - 3px),
+        calc(100% - 13px) calc(50% - 3px);
+    background-size: 8px 8px, 8px 8px;
+    background-repeat: no-repeat;
+    padding-right: 35px; 
+}
+
+.yorum-form button {
+    margin-top: 18px;
+    background-color: #451032;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: 0.25s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Oranienbaum", serif;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.yorum-form button:hover {
+    background-color: #5a1840;
+    transform: translateY(-1px) scale(1.03);
+    box-shadow: 0 6px 14px rgba(69,16,50,0.35);
+}
+
+.yorum-form button {
+    margin-top: 15px;
+    background-color: #451032;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.yorum-form button:hover {
+    background-color: #5a1840;
+    transform: scale(1.05);
+}
+
+.uyari {
+    color: rgb(120, 31, 49);
+    font-weight: bold;
+    text-align: center;
+}
+
+.yorumlar {
+    max-width: 650px;
+    margin: 20px auto;
+    
+}
+
+.yorumlar h3 {
+    text-align: center;
+    color: #451032;
+    margin-bottom: 20px;
+}
+
+.yorum-kutu {
+    background: #f7f2f2;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    transition: transform 0.2s ease;
+}
+
+.yorum-kutu:hover {
+    transform: translateY(-3px);
+}
+
+.yorum-icerik strong {
+    color: #451032;
+    font-size: 17px;
+}
+
+.yorum-icerik p {
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+.yildizlar {
+    color: #f5a623;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.yorum-icerik small {
+    color: #888;
+    display: block;
+    margin-top: 5px;
+}
+
+.mesajjj {
+    text-align: center;
+    font-family: "Oranienbaum", serif;
+    color: #888;
+    font-size: 14px;
+    font-style: italic;
+    margin: 15px 0;
+}

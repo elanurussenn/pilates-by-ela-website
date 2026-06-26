@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 80px;
+}
+
+
+header {
+    position: fixed; /* Headerda sabitlenmiş konumda durması için kullandım */
+    top: 0; left: 0; right: 0;
+    background: rgba(0,0,0,0.95);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    border-bottom: 1px solid #333;
+}
+
+.logo {
+    font-family: 'Oranienbaum', serif;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+.back {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 25px;
+    border: 1px solid #555;
+    border-radius: 30px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.back:hover {
+    background: #d4af37;
+    color: #000;
+    border-color: #d4af37;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Oranienbaum', serif;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+.kategori {
+    background: #111;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    border: 1px solid #333;
+}
+
+.kategori h2 {
+    color: #d4af37;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.liste {
+    display: grid;
+    gap: 12px; /*elemanlar arasında boşlukları ayarlamak için*/
+}
+
+.item {
+    background: #1a1a1a;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid #333;
+    flex-wrap: wrap;
+}
+
+.item input,
+.item select {
+    flex: 1;
+    padding: 10px;
+    background: #000;
+    border: 1px solid #444;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.btn {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.btn-yesil {
+    background: #27ae60; /*butonlarda en çok kullanılan yeşil rengi old. için kullandım*/
+    color: #fff;
+}
+
+.btn-kirmizi {
+    background: #c0392b;
+    color: #fff;
+}
+
+.yeni {
+    margin-top: 15px;
+    padding: 15px;
+    background: #1a1a1a;
+    border-radius: 8px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.yeni input,
+.yeni select {
+    flex: 1;
+    min-width: 180px;
+    padding: 12px;
+    background: #000;
+    border: 1px solid #444;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.yeni input[type=file] {
+    background: none;
+    border: none;
+    color: #d4af37;
+    flex: none;
+}
+
+.yeni button {
+    padding: 12px 20px;
+    background: #d4af37;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+}

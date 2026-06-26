@@ -1,0 +1,352 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    position: relative;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; 
+    z-index: 2; 
+}
+
+.oranienbaum-regular {
+    font-family: "Oranienbaum", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.backgrounddiv {
+    width: 100%; 
+    height: 700px; 
+    background-image: url('resimler/arka.jpg');
+    background-size: cover; 
+    background-position: center top; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    z-index: -1; 
+}
+
+.metin {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0); 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    font-weight: bold; 
+    font-family: "Oranienbaum", serif; 
+}
+
+.logo {
+    margin-right: 20px; 
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+    border-radius: 45%;
+}
+
+.title {
+    margin-left: 20px; 
+}
+
+.title h1 {
+    font-size: 20px;
+    color: black;
+    margin: 0;
+    font-family: "Oranienbaum", serif;
+}
+
+.login-icons i {
+    font-size: 18px; 
+    margin-left: 20px; 
+    color: #451032;
+}
+
+.login-icons i:hover{
+    cursor: pointer;
+}
+
+.menu {
+    flex: 1; 
+    text-align: right; 
+}
+
+.menueleman {
+    font-size: 19px;
+    font-family: "Oranienbaum", serif;
+    color: #451032;
+    text-decoration: none;
+    padding: 10px 6px;
+    position: relative; 
+    transition: color 0.3s ease;
+}
+
+.menueleman .altefekt {
+    position: absolute;
+    bottom: 0px; 
+    left: 0;
+    width: 0%; 
+    height: 1.5px;
+    background-color: #451032;
+    transition: width 0.3s ease; 
+}
+
+.menueleman:hover .altefekt {
+    width: 95%; 
+}
+.icerik-kapsayici {
+    max-width: 1100px;
+    margin: 90px auto 50px auto;
+    background-color: #f5e0e0;
+    padding: 30px 30px 35px 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+}
+
+
+.egitmen-ozet {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 20px 22px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #fff7fb, #ffeef5);
+    border-left: 5px solid #451032;
+    margin-bottom: 25px;
+}
+
+
+.profil-kapsayici {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.profil-resim {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #451032;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease-in-out;
+}
+
+.profil-resim:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 18px rgba(69, 16, 50, 0.5);
+}
+
+
+.profil-icon {
+    font-size: 90px;
+    color: #451032;
+    border: 4px solid #451032;
+    border-radius: 50%;
+    padding: 40px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease-in-out;
+}
+
+.profil-icon:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 18px rgba(69, 16, 50, 0.5);
+}
+
+.bilgi-kisim {
+    flex: 1;
+    text-align: left;
+}
+
+.bilgi-kisim h2 {
+    margin: 0 0 8px 0;
+    font-size: 24px;
+    color: #451032;
+    font-family: "Oranienbaum", serif;
+}
+
+.bilgi-kisim p {
+    margin: 0;
+    font-size: 15px;
+    color: #555;
+}
+
+.sayfa-baslik {
+    text-align: center;
+    margin: 25px 0 20px 0;
+    font-size: 24px;
+    color: #451032;
+    font-family: "Oranienbaum", serif;
+}
+
+.ders-tablo {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.ders-tablo th,
+.ders-tablo td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.ders-tablo td:first-child,
+.ders-tablo th:first-child {
+    text-align: left;
+}
+
+.ders-tablo th:not(:first-child),
+.ders-tablo td:not(:first-child) {
+    text-align: center;
+}
+
+.ders-tablo th {
+    background-color: #451032;
+    color: #ffffff;
+    font-weight: normal;
+    font-family: "Oranienbaum", serif;
+}
+
+.ders-tablo tr:nth-child(even) {
+    background-color: #faf5f8;
+}
+
+.ders-tablo tr:hover {
+    background-color: #f3e1ec;
+}
+
+.katil-buton {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 999px;
+    background-color: #451032;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    transition: all 0.25s ease;
+    border: 1px solid black;
+}
+
+.katil-buton:hover {
+    background-color: #5a1840;
+    box-shadow: 0 3px 10px rgba(69, 16, 50, 0.5);
+}
+
+.ders-dolu {
+    color: #c62828;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.bilgi-yazi {
+    text-align: center;
+    margin: 20px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.alt-butonlar {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.panel-buton {
+    display: inline-block;
+    padding: 10px 22px;
+    border-radius: 999px;
+    background-color: #f0e2ea;
+    color: #451032;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    border: 1px solid black;
+
+}
+
+.panel-buton.ikincil {
+    background-color: #e8e8e8;
+    border: 1px solid black;
+
+}
+
+.panel-buton:hover {
+    background-color: #451032;
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(69, 16, 50, 0.4);
+}
+
+.mesaj {
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border-left: 6px solid transparent;
+    position: relative;
+    text-align: center;
+    animation: slideDown 0.5s ease;
+}
+
+
+.mesaj.success {
+    background-color: #d4edda;
+    color: #155724;
+    border-left-color: #28a745;
+}
+
+.mesaj.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-left-color: #dc3545;
+}
+
+
+.mesaj .close-btn {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: inherit;
+}
+
+
+@keyframes slideDown {
+    0% { transform: translateY(-20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}

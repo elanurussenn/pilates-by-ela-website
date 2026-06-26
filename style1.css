@@ -1,0 +1,269 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e2e2e2;
+    position: relative;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+}
+
+.oranienbaum-regular {
+    font-family: "Oranienbaum", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+    border-radius: 45%;
+}
+
+.title {
+    margin-left: 20px;
+}
+
+.title h1 {
+    font-size: 20px;
+    color: black;
+    margin: 0;
+    font-family: "Oranienbaum", serif;
+}
+
+.login-icons i {
+    font-size: 18px;
+    margin-left: 20px;
+    color: #451032;
+}
+
+.login-icons i:hover {
+    cursor: pointer;
+}
+
+.menu {
+    flex: 1;
+    text-align: right;
+}
+
+.menueleman {
+    font-size: 19px;
+    font-family: "Oranienbaum", serif;
+    color: #451032;
+    text-decoration: none;
+    padding: 10px 6px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.menueleman .altefekt {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 0%;
+    height: 1.5px;
+    background-color: #451032;
+    transition: width 0.3s ease;
+}
+
+.menueleman:hover .altefekt {
+    width: 95%;
+}
+
+.baslik {
+    text-align: center;
+    margin-top: 95px;
+    font-family: "Oranienbaum", serif;
+    font-size: 29px;
+    background-color: rgb(244, 226, 204);
+}
+
+.paket {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+
+.paketkart {
+    position: relative;
+    width: 340px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.paketkart img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.paketkart:hover img {
+    filter: blur(2px) brightness(50%);
+    transform: scale(1.1);
+}
+
+.paketmetin {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    opacity: 0;
+    transition: 0.4s;
+    font-family: "Oranienbaum", serif;
+}
+
+.paketkart:hover .paketmetin {
+    opacity: 1;
+}
+.paket-bilgi-kutusu {
+    max-width: 1000px;
+    margin: 60px auto 80px;
+    padding: 40px 50px;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f6f7 100%);
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    border: 1px solid #e8e8e8;
+    text-align: center;
+    font-family: "Oranienbaum", serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+}
+
+.paket-bilgi-icerik p {
+    margin: 18px 0;
+}
+
+.paket-bilgi-icerik strong {
+    color: #451032;
+}
+
+.son-cumle {
+    font-size: 20px !important;
+    font-weight: normal;
+    color: #451032;
+    margin-top: 30px;
+    letter-spacing: 0.5px;
+}
+
+
+
+.egitmenlerdiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.egitmen {
+    background-color: rgb(235, 233, 233);
+    width: 45%;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-color: #b19cd9;
+}
+
+.egitmen:hover{
+    transform: scale(1.05);
+    box-shadow: 0 12px 35px rgba(177, 156, 217, 0.55);
+    transition: all 0.5s ease;
+}
+
+.egitmenresim img {
+    width: 130px;           
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #b19cd9;           
+    box-shadow: 0 8px 25px rgba(177, 156, 217, 0.4);
+    transition: all 0.5s ease;
+}
+
+
+.egitmenbilgi h3 {
+    margin-top: 0;
+    font-size: 22px;
+    color: #333;
+    font-family: "Oranienbaum", serif;
+}
+
+.egitmenbilgi p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.egitmenbilgi p strong {
+    color: #333;
+}
+
+
+.egitmen-puan {
+    margin-top: 18px;
+    text-align: center;
+    padding: 12px 15px;
+    background: rgba(177, 156, 217, 0.1);
+    border-radius: 30px;
+    border: 1px solid rgba(177, 156, 217, 0.2);
+    font-family: "Oranienbaum", serif;
+}
+
+.yildizlar {
+    color: #b19cd9;
+    font-size: 18px;
+    letter-spacing: 4px;
+    margin-bottom: 6px;
+}
+
+.yildizlar .fas {
+    color: #b19cd9;
+}
+
+.yildizlar .far {
+    color: #ddd;
+}
