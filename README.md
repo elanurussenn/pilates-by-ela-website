@@ -6,11 +6,13 @@ Bu proje, HTML, CSS ve JavaScript kullanılarak hazırlanmış Pilates salonu ta
 
 Aşağıda projenin farklı sayfalarına ait ekran görüntüleri yer almaktadır.
 
+<img src="screenshots/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202026-06-27%20094750.png" width="700">
+
+
 <img src="screenshots/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202026-06-27%20094811.png" width="700">
 
 <img src="screenshots/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202026-06-27%20094822.png" width="700">
 
-<img src="screenshots/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202026-06-27%20094750.png" width="700">
 
 <img src="screenshots/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202026-06-27%20094956.png" width="700">
 
