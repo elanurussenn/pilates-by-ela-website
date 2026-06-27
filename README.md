@@ -2,6 +2,36 @@
 
 Bu proje, HTML, CSS ve JavaScript kullanılarak hazırlanmış Pilates salonu tanıtım ve sağlıklı beslenme web sitesidir. Web sitesinde Pilates By Ela markası için ana sayfa, üyelik tanıtımı, görsel içerik alanları ve sağlıklı besin kategorilerinin listelendiği beslenme sayfası bulunmaktadır.
 
+## Proje Görselleri
+
+Aşağıda projenin farklı sayfalarına ait ekran görüntüleri yer almaktadır.
+
+<img src="screenshots/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202026-06-27%20094811.png" width="700">
+
+<img src="screenshots/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202026-06-27%20094822.png" width="700">
+
+<img src="screenshots/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202026-06-27%20094750.png" width="700">
+
+<img src="screenshots/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202026-06-27%20094956.png" width="700">
+
+<img src="screenshots/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202026-06-27%20095005.png" width="700">
+
+<img src="screenshots/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202026-06-27%20095014.png" width="700">
+
+<img src="screenshots/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202026-06-27%20095023.png" width="700">
+
+<img src="screenshots/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202026-06-27%20095037.png" width="700">
+
+<img src="screenshots/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202026-06-27%20095046.png" width="700">
+
+<img src="screenshots/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202026-06-27%20095104.png" width="700">
+
+<img src="screenshots/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202026-06-27%20095129.png" width="700">
+
+<img src="screenshots/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202026-06-27%20094943.png" width="700">
+
+
+
 ## Proje Amacı
 
 Bu projenin amacı, bir Pilates salonu için sade, görsel ağırlıklı ve kullanıcı dostu bir tanıtım web sitesi oluşturmaktır. Ana sayfada salonun genel tanıtımı yapılırken, beslenme sayfasında sağlıklı yiyecek, içecek ve salata önerileri kategori bazlı olarak gösterilmektedir.
